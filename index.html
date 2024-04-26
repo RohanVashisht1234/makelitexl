@@ -40,9 +40,9 @@
             </form> 
         </div>
     </nav>
-    <div style="display:flex;">
-        <div style="overflow-y: auto;">
-            <div style="display:block; width: 250px; height: 100vh; margin: 12px;">
+    <div style="display:flex;height:calc(100vh - 56px);overflow-y: hidden;">
+        <div style="overflow-y:scroll;">
+            <div style="display:block; width: 250px; height: calc(100vh - 56px); margin: 12px;">
                 <div class="pb-2" style="width:226px;">
                     <p class="mb-0 border border-secondary">
                         <small class="mb-0" align="center">Text color (in menubar, sidebar)</small>
@@ -309,14 +309,14 @@
                         <small class="mb-0" align="center">Editor Text color (markdown bold italic)</small>
                     </p>
                     <input style="width:226px;" type="text" id="lxl_markdown_bold_italic"
-                        value="rgba(255, 202, 10, 255)" data-coloris>
+                        value="#ffca0a" data-coloris>
                 </div>
 
                 <div class="pb-2" style="width:226px;">
                     <p class="mb-0 border border-secondary">
                         <small class="mb-0" align="center">Editor Text color (markdown bold)</small>
                     </p>
-                    <input style="width:226px;" type="text" id="lxl_markdown_bold" value="rgba(255, 202, 10, 255)"
+                    <input style="width:226px;" type="text" id="lxl_markdown_bold" value="#ffca0a"
                         data-coloris>
                 </div>
 
@@ -324,7 +324,7 @@
                     <p class="mb-0 border border-secondary">
                         <small class="mb-0" align="center">Editor Rainbow paren's paranthesis color (3)</small>
                     </p>
-                    <input style="width:226px;" type="text" id="lxl_paren3" value="rgba(252, 212, 118, 255)"
+                    <input style="width:226px;" type="text" id="lxl_paren3" value="#fcd476"
                         data-coloris>
                 </div>
 
@@ -332,7 +332,7 @@
                     <p class="mb-0 border border-secondary">
                         <small class="mb-0" align="center">Editor Text color (markdown italic)</small>
                     </p>
-                    <input style="width:226px;" type="text" id="lxl_markdown_italic" value="rgba(255, 202, 10, 255)"
+                    <input style="width:226px;" type="text" id="lxl_markdown_italic" value="#ffca0a"
                         data-coloris>
                 </div>
 
@@ -340,7 +340,7 @@
                     <p class="mb-0 border border-secondary">
                         <small class="mb-0" align="center">Editor Text color (string)</small>
                     </p>
-                    <input style="width:226px;" type="text" id="lxl_string" value="rgba(163, 211, 252, 255)"
+                    <input style="width:226px;" type="text" id="lxl_string" value="#a3d3fc"
                         data-coloris>
                 </div>
 
@@ -348,7 +348,7 @@
                     <p class="mb-0 border border-secondary">
                         <small class="mb-0" align="center">Editor Text color (symbol)</small>
                     </p>
-                    <input style="width:226px;" type="text" id="lxl_symbol" value="rgba(255, 79, 144, 255)"
+                    <input style="width:226px;" type="text" id="lxl_symbol" value="#ff4f90"
                         data-coloris>
                 </div>
 
@@ -356,7 +356,7 @@
                     <p class="mb-0 border border-secondary">
                         <small class="mb-0" align="center">Editor Text color (number)</small>
                     </p>
-                    <input style="width:226px;" type="text" id="lxl_number" value="rgba(43, 223, 255, 255)"
+                    <input style="width:226px;" type="text" id="lxl_number" value="#2bdfff"
                         data-coloris>
                 </div>
 
@@ -364,7 +364,7 @@
                     <p class="mb-0 border border-secondary">
                         <small class="mb-0" align="center">Editor Rainbow paren's paranthesis color (2)</small>
                     </p>
-                    <input style="width:226px;" type="text" id="lxl_paren2" value="rgba(252, 176, 83, 255)"
+                    <input style="width:226px;" type="text" id="lxl_paren2" value="#fcb053"
                         data-coloris>
                 </div>
 
@@ -372,7 +372,7 @@
                     <p class="mb-0 border border-secondary">
                         <small class="mb-0" align="center">Editor Text color (keyword 2)</small>
                     </p>
-                    <input style="width:226px;" type="text" id="lxl_keyword2" value="rgba(255, 202, 10, 255)"
+                    <input style="width:226px;" type="text" id="lxl_keyword2" value="#ffca0a"
                         data-coloris>
                 </div>
 
@@ -380,7 +380,7 @@
                     <p class="mb-0 border border-secondary">
                         <small class="mb-0" align="center">Editor Text color (function)</small>
                     </p>
-                    <input style="width:226px;" type="text" id="lxl_function" value="rgba(18, 215, 255, 255)"
+                    <input style="width:226px;" type="text" id="lxl_function" value="#12d7ff"
                         data-coloris>
                 </div>
 
@@ -388,7 +388,7 @@
                     <p class="mb-0 border border-secondary">
                         <small class="mb-0" align="center">Editor Text color (Diff delete)</small>
                     </p>
-                    <input style="width:226px;" type="text" id="lxl_diff_add" value="rgba(114, 184, 134, 255)"
+                    <input style="width:226px;" type="text" id="lxl_diff_add" value="#72b886"
                         data-coloris>
                 </div>
 
@@ -396,7 +396,7 @@
                     <p class="mb-0 border border-secondary">
                         <small class="mb-0" align="center">Editor Text color (ignore)</small>
                     </p>
-                    <input style="width:226px;" type="text" id="lxl_ignore" value="rgba(114, 184, 134, 255)"
+                    <input style="width:226px;" type="text" id="lxl_ignore" value="#72b886"
                         data-coloris>
                 </div>
 
@@ -404,14 +404,14 @@
                     <p class="mb-0 border border-secondary">
                         <small class="mb-0" align="center">Editor Rainbow paren's paranthesis color (1)</small>
                     </p>
-                    <input style="width:226px;" type="text" id="lxl_paren1" value="rgba(252, 111, 113, 255)"
+                    <input style="width:226px;" type="text" id="lxl_paren1" value="#fc6f71"
                         data-coloris>
                 </div>
 
             </div>
         </div>
         <center id="PLACE_IMAGE_HERE"
-            style="height: calc(100vh - 40px);display: flex; align-items: center;padding: 40px; width:calc(100vw - 250px);">
+            style="height: calc(100vh - 56px);display: flex; align-items: center;padding: 40px; width:calc(100vw - 250px);user-select: none;-moz-user-select: none;-webkit-user-drag: none;-webkit-user-select: none;">
             Loading lite-xl editor.....
         </center>
     </div>
