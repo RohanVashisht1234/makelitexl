@@ -115,7 +115,65 @@ document.getElementById("lxl_diff_add").addEventListener('input', asdf);
 document.getElementById("lxl_ignore").addEventListener('input', asdf);
 document.getElementById("lxl_paren1").addEventListener('input', asdf);
 
+function download(filename, text) {
+    var element = document.createElement('a');
+    element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
+    element.setAttribute('download', filename);
 
-function generate_lua(){
-    
+    element.style.display = 'none';
+    document.body.appendChild(element);
+
+    element.click();
+
+    document.body.removeChild(element);
+}
+
+function generate_lua() {
+    generated_code = `local style = require "core.style"
+local common = require "core.common"
+
+style.background = { common.color "${document.getElementById("lxl_background").value}" }  -- Docview
+style.background2 = { common.color "${document.getElementById("lxl_background2").value}" } -- Treeview
+style.background3 = { common.color "${document.getElementById("lxl_background3").value}" } -- Command view
+style.text = { common.color "${document.getElementById("lxl_text").value}" }
+style.caret = { common.color "${document.getElementById("lxl_caret").value}" }
+style.accent = { common.color "${document.getElementById("lxl_accent").value}" }
+style.dim = { common.color "${document.getElementById("lxl_dim").value}" }
+style.divider = { common.color "${document.getElementById("lxl_divider").value}" } -- Line between nodes
+style.selection = { common.color "${document.getElementById("lxl_selection").value}" }
+style.line_number = { common.color ${document.getElementById("lxl_number").value}" }
+style.line_number2 = { common.color "#83838f" } -- With cursor
+style.line_highlight = { common.color "${document.getElementById("lxl_line_highlight").value}" }
+style.scrollbar = { common.color "${document.getElementById("lxl_scrollbar").value}" }
+style.scrollbar2 = { common.color "${document.getElementById("lxl_scrollbar2").value}" } -- Hovered
+style.scrollbar_track = { common.color "${document.getElementById("lxl_scrollbar_track").value}" }
+style.nagbar = { common.color "${document.getElementById("lxl_nagbar").value}" }
+style.nagbar_text = { common.color "${document.getElementById("lxl_nagbar_text").value}" }
+style.nagbar_dim = { common.color "rgba(0, 0, 0, 0.45)" }
+style.drag_overlay = { common.color "${document.getElementById("lxl_drag_overlay").value}" }
+style.drag_overlay_tab = { common.color "${document.getElementById("lxl_drag_overlay_tab").value}" }
+style.good = { common.color "${document.getElementById("lxl_good").value}" }
+style.warn = { common.color "${document.getElementById("lxl_warn").value}" }
+style.error = { common.color "${document.getElementById("lxl_error").value}" }
+style.modified = { common.color "${document.getElementById("lxl_modified").value}" }
+
+style.syntax["normal"] = { common.color "${document.getElementById("lxl_normal").value}" }
+style.syntax["symbol"] = { common.color "${document.getElementById("lxl_symbol").value}" }
+style.syntax["comment"] = { common.color "${document.getElementById("lxl_comment").value}" }
+style.syntax["keyword"] = { common.color "${document.getElementById("lxl_keyword").value}" }  -- local function end if case
+style.syntax["keyword2"] = { common.color "${document.getElementById("lxl_keyword2").value}" } -- self int float
+style.syntax["number"] = { common.color "${document.getElementById("lxl_number").value}" }
+style.syntax["literal"] = { common.color "${document.getElementById("lxl_literal").value}" }  -- true false nil
+style.syntax["string"] = { common.color "${document.getElementById("lxl_string").value}" }
+style.syntax["operator"] = { common.color "${document.getElementById("lxl_operator").value}" } -- = + - / < >
+style.syntax["function"] = { common.color "${document.getElementById("lxl_function").value}" }
+
+style.log["INFO"]  = { icon = "i", color = style.text }
+style.log["WARN"]  = { icon = "!", color = style.warn }
+style.log["ERROR"] = { icon = "!", color = style.error }
+
+return style
+    `
+    // thanks to https://stackoverflow.com/a/18197341/23246686
+    download('test.txt', generate_lua);
 }
