@@ -53,7 +53,7 @@ function asdf() {
 }
 
 // Load the image:
-fetch('/main.svg')
+fetch('./main.svg')
     .then(response => {
         if (!response.ok) {
             throw new Error('Network response was not ok');
