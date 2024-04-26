@@ -114,3 +114,8 @@ document.getElementById("lxl_function").addEventListener('input', asdf);
 document.getElementById("lxl_diff_add").addEventListener('input', asdf);
 document.getElementById("lxl_ignore").addEventListener('input', asdf);
 document.getElementById("lxl_paren1").addEventListener('input', asdf);
+
+
+function generate_lua(){
+    
+}
