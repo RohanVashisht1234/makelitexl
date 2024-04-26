@@ -172,8 +172,6 @@ style.syntax["function"] = { common.color "${document.getElementById("lxl_functi
 style.log["INFO"]  = { icon = "i", color = style.text }
 style.log["WARN"]  = { icon = "!", color = style.warn }
 style.log["ERROR"] = { icon = "!", color = style.error }
-
-return style
     `
     // thanks to https://stackoverflow.com/a/18197341/23246686
     download('theme.lua', generated_code);
