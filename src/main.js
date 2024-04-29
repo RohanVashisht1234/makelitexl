@@ -1,4 +1,4 @@
-function asdf() {
+function hot_reload() {
     document.getElementById("styling").innerHTML = `
             :root{
     --lxl_text: ${document.getElementById("lxl_text").value};
@@ -52,66 +52,53 @@ function asdf() {
 `
 }
 
-document.getElementById("lxl_text").addEventListener('input', asdf);
-document.getElementById("lxl_line_number").addEventListener('input', asdf);
-document.getElementById("lxl_warn").addEventListener('input', asdf);
-document.getElementById("lxl_selection").addEventListener('input', asdf);
-document.getElementById("lxl_dim").addEventListener('input', asdf);
-document.getElementById("lxl_accent").addEventListener('input', asdf);
-document.getElementById("lxl_background2").addEventListener('input', asdf);
-document.getElementById("lxl_scrollbar").addEventListener('input', asdf);
-document.getElementById("lxl_line_number2").addEventListener('input', asdf);
-document.getElementById("lxl_drag_overlay_tab").addEventListener('input', asdf);
-document.getElementById("lxl_nagbar_text").addEventListener('input', asdf);
-document.getElementById("lxl_guide_highlighting").addEventListener('input', asdf);
-document.getElementById("lxl_scrollbar2").addEventListener('input', asdf);
-document.getElementById("lxl_line_highlight").addEventListener('input', asdf);
-document.getElementById("lxl_guide").addEventListener('input', asdf);
-document.getElementById("lxl_modified").addEventListener('input', asdf);
-document.getElementById("lxl_error").addEventListener('input', asdf);
-document.getElementById("lxl_good").addEventListener('input', asdf);
-document.getElementById("lxl_background").addEventListener('input', asdf);
-document.getElementById("lxl_background3").addEventListener('input', asdf);
-document.getElementById("lxl_divider").addEventListener('input', asdf);
-document.getElementById("lxl_caret").addEventListener('input', asdf);
-document.getElementById("lxl_scrollbar_track").addEventListener('input', asdf);
-document.getElementById("lxl_nagbar").addEventListener('input', asdf);
-document.getElementById("lxl_paren5").addEventListener('input', asdf);
-document.getElementById("lxl_paren4").addEventListener('input', asdf);
-document.getElementById("lxl_normal").addEventListener('input', asdf);
-document.getElementById("lxl_paren_unbalanced").addEventListener('input', asdf);
-document.getElementById("lxl_exclude").addEventListener('input', asdf);
-document.getElementById("lxl_keyword").addEventListener('input', asdf);
-document.getElementById("lxl_diff_del").addEventListener('input', asdf);
-document.getElementById("lxl_literal").addEventListener('input', asdf);
-document.getElementById("lxl_operator").addEventListener('input', asdf);
-document.getElementById("lxl_comment").addEventListener('input', asdf);
-document.getElementById("lxl_markdown_bold_italic").addEventListener('input', asdf);
-document.getElementById("lxl_markdown_bold").addEventListener('input', asdf);
-document.getElementById("lxl_paren3").addEventListener('input', asdf);
-document.getElementById("lxl_markdown_italic").addEventListener('input', asdf);
-document.getElementById("lxl_string").addEventListener('input', asdf);
-document.getElementById("lxl_symbol").addEventListener('input', asdf);
-document.getElementById("lxl_number").addEventListener('input', asdf);
-document.getElementById("lxl_paren2").addEventListener('input', asdf);
-document.getElementById("lxl_keyword2").addEventListener('input', asdf);
-document.getElementById("lxl_function").addEventListener('input', asdf);
-document.getElementById("lxl_diff_add").addEventListener('input', asdf);
-document.getElementById("lxl_ignore").addEventListener('input', asdf);
-document.getElementById("lxl_paren1").addEventListener('input', asdf);
-
-function download(filename, text) {
-    var element = document.createElement('a');
-    element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
-    element.setAttribute('download', filename);
-
-    element.style.display = 'none';
-    document.body.appendChild(element);
-
-    element.click();
-
-    document.body.removeChild(element);
-}
+document.getElementById("lxl_text").addEventListener('input', hot_reload);
+document.getElementById("lxl_line_number").addEventListener('input', hot_reload);
+document.getElementById("lxl_warn").addEventListener('input', hot_reload);
+document.getElementById("lxl_selection").addEventListener('input', hot_reload);
+document.getElementById("lxl_dim").addEventListener('input', hot_reload);
+document.getElementById("lxl_accent").addEventListener('input', hot_reload);
+document.getElementById("lxl_background2").addEventListener('input', hot_reload);
+document.getElementById("lxl_scrollbar").addEventListener('input', hot_reload);
+document.getElementById("lxl_line_number2").addEventListener('input', hot_reload);
+document.getElementById("lxl_drag_overlay_tab").addEventListener('input', hot_reload);
+document.getElementById("lxl_nagbar_text").addEventListener('input', hot_reload);
+document.getElementById("lxl_guide_highlighting").addEventListener('input', hot_reload);
+document.getElementById("lxl_scrollbar2").addEventListener('input', hot_reload);
+document.getElementById("lxl_line_highlight").addEventListener('input', hot_reload);
+document.getElementById("lxl_guide").addEventListener('input', hot_reload);
+document.getElementById("lxl_modified").addEventListener('input', hot_reload);
+document.getElementById("lxl_error").addEventListener('input', hot_reload);
+document.getElementById("lxl_good").addEventListener('input', hot_reload);
+document.getElementById("lxl_background").addEventListener('input', hot_reload);
+document.getElementById("lxl_background3").addEventListener('input', hot_reload);
+document.getElementById("lxl_divider").addEventListener('input', hot_reload);
+document.getElementById("lxl_caret").addEventListener('input', hot_reload);
+document.getElementById("lxl_scrollbar_track").addEventListener('input', hot_reload);
+document.getElementById("lxl_nagbar").addEventListener('input', hot_reload);
+document.getElementById("lxl_paren5").addEventListener('input', hot_reload);
+document.getElementById("lxl_paren4").addEventListener('input', hot_reload);
+document.getElementById("lxl_normal").addEventListener('input', hot_reload);
+document.getElementById("lxl_paren_unbalanced").addEventListener('input', hot_reload);
+document.getElementById("lxl_exclude").addEventListener('input', hot_reload);
+document.getElementById("lxl_keyword").addEventListener('input', hot_reload);
+document.getElementById("lxl_diff_del").addEventListener('input', hot_reload);
+document.getElementById("lxl_literal").addEventListener('input', hot_reload);
+document.getElementById("lxl_operator").addEventListener('input', hot_reload);
+document.getElementById("lxl_comment").addEventListener('input', hot_reload);
+document.getElementById("lxl_markdown_bold_italic").addEventListener('input', hot_reload);
+document.getElementById("lxl_markdown_bold").addEventListener('input', hot_reload);
+document.getElementById("lxl_paren3").addEventListener('input', hot_reload);
+document.getElementById("lxl_markdown_italic").addEventListener('input', hot_reload);
+document.getElementById("lxl_string").addEventListener('input', hot_reload);
+document.getElementById("lxl_symbol").addEventListener('input', hot_reload);
+document.getElementById("lxl_number").addEventListener('input', hot_reload);
+document.getElementById("lxl_paren2").addEventListener('input', hot_reload);
+document.getElementById("lxl_keyword2").addEventListener('input', hot_reload);
+document.getElementById("lxl_function").addEventListener('input', hot_reload);
+document.getElementById("lxl_diff_add").addEventListener('input', hot_reload);
+document.getElementById("lxl_ignore").addEventListener('input', hot_reload);
+document.getElementById("lxl_paren1").addEventListener('input', hot_reload);
 
 function generate_lua() {
     generated_code = ` -- generated using lite-xl designer
