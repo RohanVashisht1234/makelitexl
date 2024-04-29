@@ -12,7 +12,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-        <link rel="icon" href="./static/logo.svg">
+    <link rel="icon" href="./static/logo.svg">
     <style>
         #PLACE_IMAGE_HERE {
             margin: 0;
@@ -32,15 +32,14 @@
     <nav class="navbar">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
-                <img src="./static/logo.svg" alt="Logo" width="30"
-                    height="24" class="d-inline-block align-text-top">
-                    Lite-xl designer
+                <img src="./static/logo.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                Lite-xl designer
             </a>
             <div class="d-flex" role="search">
                 <a class="btn btn-dark" href="https://github.com/rohanvashisht1234">&copy;2024 Rohan Vashisht</a>
                 <a class="btn btn-info mx-2" href="https://lite-xl.com/en/downloads">Download Lite-xl</a>
                 <button class="btn btn-success" onclick="generate_lua()">Download Lua file</button>
-            </div> 
+            </div>
         </div>
     </nav>
     <div style="display:flex;height:calc(100vh - 56px);overflow-y: hidden;">
@@ -56,8 +55,7 @@
                     <p class="mb-0 border border-secondary">
                         <small class="mb-0" align="center">Text color of line number</small>
                     </p>
-                    <input style="width:226px;" type="text" id="lxl_line_number" value="#555555"
-                        data-coloris>
+                    <input style="width:226px;" type="text" id="lxl_line_number" value="#555555" data-coloris>
                 </div>
 
                 <div class="pb-2" style="width:226px;">
@@ -71,8 +69,7 @@
                     <p class="mb-0 border border-secondary">
                         <small class="mb-0" align="center">File/folder selection BG color</small>
                     </p>
-                    <input style="width:226px;" type="text" id="lxl_selection" value="#aaaaaa"
-                        data-coloris>
+                    <input style="width:226px;" type="text" id="lxl_selection" value="#aaaaaa" data-coloris>
                 </div>
 
                 <div class="pb-2" style="width:226px;">
@@ -86,70 +83,61 @@
                     <p class="mb-0 border border-secondary">
                         <small class="mb-0" align="center">Text-number line color</small>
                     </p>
-                    <input style="width:226px;" type="text" id="lxl_accent" value="#adf4ff"
-                        data-coloris>
+                    <input style="width:226px;" type="text" id="lxl_accent" value="#adf4ff" data-coloris>
                 </div>
 
                 <div class="pb-2" style="width:226px;">
                     <p class="mb-0 border border-secondary">
                         <small class="mb-0" align="center">Outer BG (not the editor BG)</small>
                     </p>
-                    <input style="width:226px;" type="text" id="lxl_background2" value="#1e1f22"
-                        data-coloris>
+                    <input style="width:226px;" type="text" id="lxl_background2" value="#1e1f22" data-coloris>
                 </div>
 
                 <div class="pb-2" style="width:226px;">
                     <p class="mb-0 border border-secondary">
                         <small class="mb-0" align="center">BG color of Scroll Bar</small>
                     </p>
-                    <input style="width:226px;" type="text" id="lxl_scrollbar" value="#414146"
-                        data-coloris>
+                    <input style="width:226px;" type="text" id="lxl_scrollbar" value="#414146" data-coloris>
                 </div>
 
                 <div class="pb-2" style="width:226px;">
                     <p class="mb-0 border border-secondary">
                         <small class="mb-0" align="center">Selected line number's color</small>
                     </p>
-                    <input style="width:226px;" type="text" id="lxl_line_number2" value="#555555"
-                        data-coloris>
+                    <input style="width:226px;" type="text" id="lxl_line_number2" value="#555555" data-coloris>
                 </div>
 
                 <div class="pb-2" style="width:226px;">
                     <p class="mb-0 border border-secondary">
                         <small class="mb-0" align="center">Overlay tab's selected line color</small>
                     </p>
-                    <input style="width:226px;" type="text" id="lxl_drag_overlay_tab" value="#93ddfa"
-                        data-coloris>
+                    <input style="width:226px;" type="text" id="lxl_drag_overlay_tab" value="#93ddfa" data-coloris>
                 </div>
 
                 <div class="pb-2" style="width:226px;">
                     <p class="mb-0 border border-secondary">
                         <small class="mb-0" align="center">Nagbar text color</small>
                     </p>
-                    <input style="width:226px;" type="text" id="lxl_nagbar_text" value="#ffffff"
-                        data-coloris>
+                    <input style="width:226px;" type="text" id="lxl_nagbar_text" value="#ffffff" data-coloris>
                 </div>
                 <div class="pb-2" style="width:226px;">
                     <p class="mb-0 border border-secondary">
                         <small class="mb-0" align="center">Guide highlighting color</small>
                     </p>
-                    <input style="width:226px;" type="text" id="lxl_guide_highlighting" value="#555555"
-                        data-coloris>
+                    <input style="width:226px;" type="text" id="lxl_guide_highlighting" value="#555555" data-coloris>
                 </div>
                 <div class="pb-2" style="width:226px;">
                     <p class="mb-0 border border-secondary">
                         <small class="mb-0" align="center">BG of scrollbar (2<sup>nd</sup>)</small>
                     </p>
-                    <input style="width:226px;" type="text" id="lxl_scrollbar2" value="#4b4b52"
-                        data-coloris>
+                    <input style="width:226px;" type="text" id="lxl_scrollbar2" value="#4b4b52" data-coloris>
                 </div>
 
                 <div class="pb-2" style="width:226px;">
                     <p class="mb-0 border border-secondary">
                         <small class="mb-0" align="center">Highlighted line BG color</small>
                     </p>
-                    <input style="width:226px;" type="text" id="lxl_line_highlight" value="#add7ff"
-                        data-coloris>
+                    <input style="width:226px;" type="text" id="lxl_line_highlight" value="#add7ff" data-coloris>
                 </div>
 
                 <div class="pb-2" style="width:226px;">
@@ -163,8 +151,7 @@
                     <p class="mb-0 border border-secondary">
                         <small class="mb-0" align="center">Git modified color</small>
                     </p>
-                    <input style="width:226px;" type="text" id="lxl_modified" value="#1c7c9c"
-                        data-coloris>
+                    <input style="width:226px;" type="text" id="lxl_modified" value="#1c7c9c" data-coloris>
                 </div>
 
                 <div class="pb-2" style="width:226px;">
@@ -185,16 +172,14 @@
                     <p class="mb-0 border border-secondary">
                         <small class="mb-0" align="center">Editor Background color</small>
                     </p>
-                    <input style="width:226px;" type="text" id="lxl_background" value="#2b2d31"
-                        data-coloris>
+                    <input style="width:226px;" type="text" id="lxl_background" value="#2b2d31" data-coloris>
                 </div>
 
                 <div class="pb-2" style="width:226px;">
                     <p class="mb-0 border border-secondary">
                         <small class="mb-0" align="center">Non-editor tab's UI's BG color</small>
                     </p>
-                    <input style="width:226px;" type="text" id="lxl_background3" value="#1e1f22"
-                        data-coloris>
+                    <input style="width:226px;" type="text" id="lxl_background3" value="#1e1f22" data-coloris>
                 </div>
 
                 <div class="pb-2" style="width:226px;">
@@ -208,16 +193,14 @@
                     <p class="mb-0 border border-secondary">
                         <small class="mb-0" align="center">Caret color</small>
                     </p>
-                    <input style="width:226px;" type="text" id="lxl_caret" value="#1e1e1e"
-                        data-coloris>
+                    <input style="width:226px;" type="text" id="lxl_caret" value="#1e1e1e" data-coloris>
                 </div>
 
                 <div class="pb-2" style="width:226px;">
                     <p class="mb-0 border border-secondary">
                         <small class="mb-0" align="center">Scrollable track bar BG color</small>
                     </p>
-                    <input style="width:226px;" type="text" id="lxl_scrollbar_track" value="#000000"
-                        data-coloris>
+                    <input style="width:226px;" type="text" id="lxl_scrollbar_track" value="#000000" data-coloris>
                 </div>
 
                 <div class="pb-2" style="width:226px;">
@@ -231,184 +214,161 @@
                     <p class="mb-0 border border-secondary">
                         <small class="mb-0" align="center">Editor Rainbow paren's paranthesis color (5)</small>
                     </p>
-                    <input style="width:226px;" type="text" id="lxl_paren5" value="#5a98cf"
-                        data-coloris>
+                    <input style="width:226px;" type="text" id="lxl_paren5" value="#5a98cf" data-coloris>
                 </div>
 
                 <div class="pb-2" style="width:226px;">
                     <p class="mb-0 border border-secondary">
                         <small class="mb-0" align="center">Editor Rainbow paren's paranthesis color (4)</small>
                     </p>
-                    <input style="width:226px;" type="text" id="lxl_paren4" value="#52dab2"
-                        data-coloris>
+                    <input style="width:226px;" type="text" id="lxl_paren4" value="#52dab2" data-coloris>
                 </div>
 
                 <div class="pb-2" style="width:226px;">
                     <p class="mb-0 border border-secondary">
                         <small class="mb-0" align="center">Editor Rainbow paren's paranthesis color (normal)</small>
                     </p>
-                    <input style="width:226px;" type="text" id="lxl_normal" value="#ffffff"
-                        data-coloris>
+                    <input style="width:226px;" type="text" id="lxl_normal" value="#ffffff" data-coloris>
                 </div>
 
                 <div class="pb-2" style="width:226px;">
                     <p class="mb-0 border border-secondary">
                         <small class="mb-0" align="center">Editor Rainbow paren's paranthesis color (unbalanced)</small>
                     </p>
-                    <input style="width:226px;" type="text" id="lxl_paren_unbalanced" value="#dc0408"
-                        data-coloris>
+                    <input style="width:226px;" type="text" id="lxl_paren_unbalanced" value="#dc0408" data-coloris>
                 </div>
 
                 <div class="pb-2" style="width:226px;">
                     <p class="mb-0 border border-secondary">
                         <small class="mb-0" align="center">Editor Text color (exclude)</small>
                     </p>
-                    <input style="width:226px;" type="text" id="lxl_exclude" value="#f36161"
-                        data-coloris>
+                    <input style="width:226px;" type="text" id="lxl_exclude" value="#f36161" data-coloris>
                 </div>
 
                 <div class="pb-2" style="width:226px;">
                     <p class="mb-0 border border-secondary">
                         <small class="mb-0" align="center">Editor Text color (keyword)</small>
                     </p>
-                    <input style="width:226px;" type="text" id="lxl_keyword" value="#ff57b6"
-                        data-coloris>
+                    <input style="width:226px;" type="text" id="lxl_keyword" value="#ff57b6" data-coloris>
                 </div>
 
                 <div class="pb-2" style="width:226px;">
                     <p class="mb-0 border border-secondary">
                         <small class="mb-0" align="center">Editor Text color (Diff delete)</small>
                     </p>
-                    <input style="width:226px;" type="text" id="lxl_diff_del" value="#f36161"
-                        data-coloris>
+                    <input style="width:226px;" type="text" id="lxl_diff_del" value="#f36161" data-coloris>
                 </div>
 
                 <div class="pb-2" style="width:226px;">
                     <p class="mb-0 border border-secondary">
                         <small class="mb-0" align="center">Editor Text color (literal)</small>
                     </p>
-                    <input style="width:226px;" type="text" id="lxl_literal" value="#ffca0a"
-                        data-coloris>
+                    <input style="width:226px;" type="text" id="lxl_literal" value="#ffca0a" data-coloris>
                 </div>
 
                 <div class="pb-2" style="width:226px;">
                     <p class="mb-0 border border-secondary">
                         <small class="mb-0" align="center">Editor Text color (operator)</small>
                     </p>
-                    <input style="width:226px;" type="text" id="lxl_operator" value="#33ffe7"
-                        data-coloris>
+                    <input style="width:226px;" type="text" id="lxl_operator" value="#33ffe7" data-coloris>
                 </div>
 
                 <div class="pb-2" style="width:226px;">
                     <p class="mb-0 border border-secondary">
                         <small class="mb-0" align="center">Editor Text color (comment)</small>
                     </p>
-                    <input style="width:226px;" type="text" id="lxl_comment" value="#8b949e"
-                        data-coloris>
+                    <input style="width:226px;" type="text" id="lxl_comment" value="#8b949e" data-coloris>
                 </div>
 
                 <div class="pb-2" style="width:226px;">
                     <p class="mb-0 border border-secondary">
                         <small class="mb-0" align="center">Editor Text color (markdown bold italic)</small>
                     </p>
-                    <input style="width:226px;" type="text" id="lxl_markdown_bold_italic"
-                        value="#ffca0a" data-coloris>
+                    <input style="width:226px;" type="text" id="lxl_markdown_bold_italic" value="#ffca0a" data-coloris>
                 </div>
 
                 <div class="pb-2" style="width:226px;">
                     <p class="mb-0 border border-secondary">
                         <small class="mb-0" align="center">Editor Text color (markdown bold)</small>
                     </p>
-                    <input style="width:226px;" type="text" id="lxl_markdown_bold" value="#ffca0a"
-                        data-coloris>
+                    <input style="width:226px;" type="text" id="lxl_markdown_bold" value="#ffca0a" data-coloris>
                 </div>
 
                 <div class="pb-2" style="width:226px;">
                     <p class="mb-0 border border-secondary">
                         <small class="mb-0" align="center">Editor Rainbow paren's paranthesis color (3)</small>
                     </p>
-                    <input style="width:226px;" type="text" id="lxl_paren3" value="#fcd476"
-                        data-coloris>
+                    <input style="width:226px;" type="text" id="lxl_paren3" value="#fcd476" data-coloris>
                 </div>
 
                 <div class="pb-2" style="width:226px;">
                     <p class="mb-0 border border-secondary">
                         <small class="mb-0" align="center">Editor Text color (markdown italic)</small>
                     </p>
-                    <input style="width:226px;" type="text" id="lxl_markdown_italic" value="#ffca0a"
-                        data-coloris>
+                    <input style="width:226px;" type="text" id="lxl_markdown_italic" value="#ffca0a" data-coloris>
                 </div>
 
                 <div class="pb-2" style="width:226px;">
                     <p class="mb-0 border border-secondary">
                         <small class="mb-0" align="center">Editor Text color (string)</small>
                     </p>
-                    <input style="width:226px;" type="text" id="lxl_string" value="#a3d3fc"
-                        data-coloris>
+                    <input style="width:226px;" type="text" id="lxl_string" value="#a3d3fc" data-coloris>
                 </div>
 
                 <div class="pb-2" style="width:226px;">
                     <p class="mb-0 border border-secondary">
                         <small class="mb-0" align="center">Editor Text color (symbol)</small>
                     </p>
-                    <input style="width:226px;" type="text" id="lxl_symbol" value="#ff4f90"
-                        data-coloris>
+                    <input style="width:226px;" type="text" id="lxl_symbol" value="#ff4f90" data-coloris>
                 </div>
 
                 <div class="pb-2" style="width:226px;">
                     <p class="mb-0 border border-secondary">
                         <small class="mb-0" align="center">Editor Text color (number)</small>
                     </p>
-                    <input style="width:226px;" type="text" id="lxl_number" value="#2bdfff"
-                        data-coloris>
+                    <input style="width:226px;" type="text" id="lxl_number" value="#2bdfff" data-coloris>
                 </div>
 
                 <div class="pb-2" style="width:226px;">
                     <p class="mb-0 border border-secondary">
                         <small class="mb-0" align="center">Editor Rainbow paren's paranthesis color (2)</small>
                     </p>
-                    <input style="width:226px;" type="text" id="lxl_paren2" value="#fcb053"
-                        data-coloris>
+                    <input style="width:226px;" type="text" id="lxl_paren2" value="#fcb053" data-coloris>
                 </div>
 
                 <div class="pb-2" style="width:226px;">
                     <p class="mb-0 border border-secondary">
                         <small class="mb-0" align="center">Editor Text color (keyword 2)</small>
                     </p>
-                    <input style="width:226px;" type="text" id="lxl_keyword2" value="#ffca0a"
-                        data-coloris>
+                    <input style="width:226px;" type="text" id="lxl_keyword2" value="#ffca0a" data-coloris>
                 </div>
 
                 <div class="pb-2" style="width:226px;">
                     <p class="mb-0 border border-secondary">
                         <small class="mb-0" align="center">Editor Text color (function)</small>
                     </p>
-                    <input style="width:226px;" type="text" id="lxl_function" value="#12d7ff"
-                        data-coloris>
+                    <input style="width:226px;" type="text" id="lxl_function" value="#12d7ff" data-coloris>
                 </div>
 
                 <div class="pb-2" style="width:226px;">
                     <p class="mb-0 border border-secondary">
                         <small class="mb-0" align="center">Editor Text color (Diff delete)</small>
                     </p>
-                    <input style="width:226px;" type="text" id="lxl_diff_add" value="#72b886"
-                        data-coloris>
+                    <input style="width:226px;" type="text" id="lxl_diff_add" value="#72b886" data-coloris>
                 </div>
 
                 <div class="pb-2" style="width:226px;">
                     <p class="mb-0 border border-secondary">
                         <small class="mb-0" align="center">Editor Text color (ignore)</small>
                     </p>
-                    <input style="width:226px;" type="text" id="lxl_ignore" value="#72b886"
-                        data-coloris>
+                    <input style="width:226px;" type="text" id="lxl_ignore" value="#72b886" data-coloris>
                 </div>
 
                 <div class="pb-2" style="width:226px;">
                     <p class="mb-0 border border-secondary">
                         <small class="mb-0" align="center">Editor Rainbow paren's paranthesis color (1)</small>
                     </p>
-                    <input style="width:226px;" type="text" id="lxl_paren1" value="#fc6f71"
-                        data-coloris>
+                    <input style="width:226px;" type="text" id="lxl_paren1" value="#fc6f71" data-coloris>
                 </div>
 
             </div>
