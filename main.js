@@ -52,21 +52,6 @@ function asdf() {
 `
 }
 
-// Load the image:
-fetch('./main.svg')
-    .then(response => {
-        if (!response.ok) {
-            throw new Error('Network response was not ok');
-        }
-        return response.text();
-    })
-    .then(svgContent => {
-        document.getElementById("PLACE_IMAGE_HERE").innerHTML = svgContent;
-    })
-    .catch(error => {
-        console.error('There was a problem with the fetch operation:', error);
-    });
-
 document.getElementById("lxl_text").addEventListener('input', asdf);
 document.getElementById("lxl_line_number").addEventListener('input', asdf);
 document.getElementById("lxl_warn").addEventListener('input', asdf);
